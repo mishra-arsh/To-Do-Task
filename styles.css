@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 20px; 
+    /* background: linear-gradient(90deg, #808080, #460080); */
+    background: url(./todoBG2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2 {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #c2c0c0, #808080);
+}
+#todo-container { 
+    max-width: 900px; 
+    margin: auto; 
+    /* border: 2px solid white; */
+    box-shadow:inset 10px 10px 20px #291f31, inset -10px -10px 20px #291f31;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    
+}
+#task-input {
+    margin: 2rem;
+    padding: 2rem;
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    font-size: 15px;
+    
+}
+ul { 
+    list-style-type: none; 
+    padding: 2rem; 
+}
+li { 
+    padding: 12px; 
+    margin: 4px 0; 
+    background: #3f2e4e;
+    color: black; 
+    display: flex; 
+    justify-content: space-between; 
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 50px #ffffff;
+}
+.completed { 
+    text-decoration: line-through; 
+    color: gray; 
+}
+.task-btn {
+    margin-left: 400px;
+    /* padding-left: 2rem; */
+    height: 35px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.task-btn:hover {
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    cursor: pointer;
+}
+.delete-btn {
+    background-color: white;
+    width: 10%;
+    border-radius: 5px
+    /* padding: 1px; */
+}
+.delete-btn:hover {
+    box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+    cursor: pointer;
+}
+.mode-icon {
+    height: 40px;
+    width: 40px;
+    background: url(./Dark\ mode.png);
+    background-size: cover;
+    border: none;
+    position: absolute;
+    right: 10px;
+}
+.mode-icon:hover {
+    cursor: pointer;
+    background-color: #808080;
+}
+.logo {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    /* background: url(./vinove_logo.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
